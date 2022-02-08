@@ -33,7 +33,6 @@ function Screenshot() {
                 const screenshot = await getScreenshot(siteUrl, apiKey);
                 const accessToken = await getValidGoogleCredentials();
                 if (accessToken) {
-                    console.log(accessToken);
                     await uploadFileToDrive(
                         screenshot,
                         accessToken.token,
