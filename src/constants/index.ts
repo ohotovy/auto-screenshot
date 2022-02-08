@@ -2,9 +2,11 @@ import { Site } from "../interfaces/Site";
 
 export const SCREENSHOT_BASE_URL = "https://api.screenshotmachine.com";
 export const REFRESH_TOKEN_URL = "https://www.googleapis.com/oauth2/v4/token";
-export const GOOGLE_DRIVE_URL = "https://www.googleapis.com/drive/v3/files";
+export const GOOGLE_DRIVE_UPLOAD_URL =
+    "https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart";
 export const GOOGLE_DRIVE_SCREENSHOTS_URL =
     "https://drive.google.com/drive/folders/13kryWwIY-Kdl5ILZ7i83azHi99qtijaD?usp=sharing";
+export const GOOGLE_DRIVE_FOLDER_ID = "13kryWwIY-Kdl5ILZ7i83azHi99qtijaD";
 
 export const sites: Site[] = [
     {
